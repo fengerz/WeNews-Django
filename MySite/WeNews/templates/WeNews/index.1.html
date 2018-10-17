@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WeNews</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <!-- блок div для центрирования -->
+    <div class="header-center">
+      <!-- Лого сайта -->
+      <div class="logo"><a href="#" title="WeNews"></a></div>
+      <!-- Левое меню -->
+      <div class="header-left-menu">
+        <div class="header-item selected">
+          <a class="header-tag" href="#">Популярное</a>
+          <div class="header-item-arrow header-image"></div>
+        </div>
+        <div class="header-item">
+          <a class="header-tag" href="#">Свежее</a>
+        </div>
+        <div class="header-item">
+          <a class="btn btn-blog" href="#">Блоги</a>
+        </div>
+      </div>
+      <!-- Правое меню -->
+      <div class="header-right-menu">
+        <div class="header-item">
+          <a class="header-tag" href="#">
+            <div class="header-item-search header-image"></div>
+            Поиск
+          </a>
+        </div>
+        <div class="header-item">
+          <a class="btn" href="#">Написать</a>
+        </div>
+        <div class="header-item">
+          <a class="header-tag" href="#">
+            <div class="header-item-login header-image"></div>
+            Войти
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Главный блок -->
+  <main>
+    <!-- блок div для центрирования -->
+    <div class="center">
+    	<!-- Поле section для новостных блоков -->
+      <section class="news-column">
+	      <!-- Новостные блоки -->
+	      <article class="news-blog blog1">
+	        <!-- Шапка новостного блока -->
+	        <header class="blog-header">
+	          <time datetime="2018-10-11T18:37:00">сегодня 18:37</time>
+	          <div class="blog-profile">
+	            <a class="blog-profile-name" href="#">
+	            <div class="blog-header-image"></div>
+	            Игнат Плесов
+	            </a>
+	          </div>
+	        </header>
+	        <!-- Основа новостного блока -->
+	        <div class="blog-main">
+	          <h1>Как обучиться программированию, работая в другой сфере — 
+	          отвечают эксперты</h1>
+	          <p>Нам в редакцию Tproger пришёл вопрос от подписчика, которым мы хотим поделиться с вами:<br><br>
+
+	          «Как обучиться программированию, работая в другой сфере?»<br><br>
+
+	          Мы обратились за разъяснениями к нашим экспертам, а полученные ответы представляем вашему вниманию.</p>
+	          <img class="blog-img" title="image" src="img/img-for-blog1.png" >
+	        </div>
+	        <!-- Футтер новостного блока -->
+	        <footer class="blog-footer">
+	          <a class="blog-footer-comment" href="#">
+	            <div class="chat footer-icon"></div>
+	            Комментарии
+	          </a>
+	          <a class="blog-footer-favorite" href="#">
+	            <div class="star footer-icon"></div>
+	            В закладки
+	          </a>
+	        </footer>
+	      </article>
+
+	      <!-- Новостные блоки -->
+	      <article class="news-blog blog2">
+	        <!-- Шапка новостного блока -->
+	        <header class="blog-header">
+	          <time datetime="2018-10-10T15:45:00">вчера 15:45</time>
+	          <div class="blog-profile">
+	            <a class="blog-profile-name" href="#">
+	            <div class="blog-header-image"></div>
+	            Борис Бритва
+	            </a>
+	          </div>
+	        </header>
+	        <!-- Основа новостного блока -->
+	        <div class="blog-main">
+	          <h1>Как выучить Git с нуля</h1>
+	          <p>Рассказываем, зачем осваивать распределенную систему управления версиями Git  и как это сделать с нуля.
+	          Чем Git отличается от других систем контроля версий?<br>
+	            <ol>
+	              <li>Как пользоваться?</li>
+	              <li>Как работать с кодом?</li>
+	              <li>Что учить дальше?</li>
+	              <li>Где учить?</li>
+	              <li>Все выучил, что дальше?</li>
+	            </ol>
+	          </p>
+	        </div>
+	        <!-- Футтер новостного блока -->
+	        <footer class="blog-footer">
+	          <a class="blog-footer-comment" href="#">
+	            <div class="chat footer-icon"></div>
+	            Комментарии
+	          </a>
+	          <a class="blog-footer-favorite" href="#">
+	            <div class="star footer-icon"></div>
+	            В закладки
+	          </a>
+	        </footer>
+	      </article>
+	  </section>
+ <!-- Пустой блок справа в главном блоке -->
+      <selection class="empty-block">
+        <p>Просто пустой блок</p>
+      </selection>
+
+      <!-- Подпорка для float -->
+      <div class="clear-fix"></div>
+    </div>
+  </main>
+
+  <!-- Футтер сайта -->
+  <footer class="footer">
+  	<!-- Блок div для центрирования -->
+  	<div class="footer-center">
+  		<section class="footer-top">
+  			<ul class="footer-top-left">
+  				<li><a href="#">О проекте</a></li>
+  				<li><a href="#">Обратная связь</a></li>
+  				<li><a href="#">Реклама</a></li>
+  			</ul>
+  			<ul class="footer-top-right">
+  				<li><a href="#" class="link-icon facebook"></a></li>
+  				<li><a href="#" class="link-icon vk"></a></li>
+  				<li><a href="#" class="link-icon twitter"></a></li>
+  				<li><a href="#" class="link-icon telegramm"></a></li>
+  				<li><a href="#" class="link-icon rss"></a></li>
+  			</ul>
+  		<!-- Подпорка для float -->
+      		<div class="clear-fix"></div>
+  		</section>
+
+  		<section class="footer-bottom">
+  			<ul class="footer-bottom-left">
+  				<li><a href="#">Правила пользованием сайтом</a></li>
+  				<li><a href="#">Политика обработки персональных данных</a></li>
+  				<li><a href="#">Карта сайта</a></li>
+  			</ul>
+  			<div class="footer-bottom-right">
+  				<a href="#">VlaDDoS & fenGeRZ 2018</a>
+  			</div>
+  		<!-- Подпорка для float -->
+      		<div class="clear-fix"></div>
+  		</section>
+  	</div>
+  </footer>
+</body>
+</html>

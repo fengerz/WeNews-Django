@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WeNews</title>
+  
+  {% load staticfiles %}
+
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <!-- блок div для центрирования -->
+    <div class="header-center">
+      <!-- Лого сайта -->
+      <div class="logo"><a href="/" title="WeNews"></a></div>
+      <!-- Левое меню -->
+      <div class="header-left-menu">
+        <div class="header-item selected">
+          <a class="header-tag" href="#">Популярное</a>
+          <div class="header-item-arrow header-image"></div>
+        </div>
+        <div class="header-item">
+          <a class="header-tag" href="#">Свежее</a>
+        </div>
+        <div class="header-item">
+          <a class="btn btn-blog" href="#">Блоги</a>
+        </div>
+      </div>
+      <!-- Правое меню -->
+      <div class="header-right-menu">
+        <div class="header-item">
+          <a class="header-tag" href="#">
+            <div class="header-item-search header-image"></div>
+            Поиск
+          </a>
+        </div>
+        <div class="header-item">
+          <a class="btn" href="#">Написать</a>
+        </div>
+        <div class="header-item">
+          <a class="header-tag" href="#">
+            <div class="header-item-login header-image"></div>
+            Войти
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+{% block content %}
+
+{% endblock %}
+
+  <!-- Футтер сайта -->
+  <footer class="footer">
+  	<!-- Блок div для центрирования -->
+  	<div class="footer-center">
+  		<section class="footer-top">
+  			<ul class="footer-top-left">
+  				<li><a href="#">О проекте</a></li>
+  				<li><a href="#">Обратная связь</a></li>
+  				<li><a href="#">Реклама</a></li>
+  			</ul>
+  			<ul class="footer-top-right">
+  				<li><a href="#" class="link-icon facebook"></a></li>
+  				<li><a href="#" class="link-icon vk"></a></li>
+  				<li><a href="#" class="link-icon twitter"></a></li>
+  				<li><a href="#" class="link-icon telegramm"></a></li>
+  				<li><a href="#" class="link-icon rss"></a></li>
+  			</ul>
+  		<!-- Подпорка для float -->
+      		<div class="clear-fix"></div>
+  		</section>
+
+  		<section class="footer-bottom">
+  			<ul class="footer-bottom-left">
+  				<li><a href="#">Правила пользованием сайтом</a></li>
+  				<li><a href="#">Политика обработки персональных данных</a></li>
+  				<li><a href="#">Карта сайта</a></li>
+  			</ul>
+  			<div class="footer-bottom-right">
+  				<a href="#">VlaDDoS & fenGeRZ 2018</a>
+  			</div>
+  		<!-- Подпорка для float -->
+      		<div class="clear-fix"></div>
+  		</section>
+  	</div>
+  </footer>
+</body>
+</html>

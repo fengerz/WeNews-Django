@@ -1,0 +1,49 @@
+{% extends "WeNews/wrapper.html" %}
+
+
+{% block content %}
+
+<!-- Главный блок -->
+<main>
+        <!-- блок div для центрирования -->
+        <div class="center">
+            <!-- Поле section для новостных блоков -->
+            <section class="news-column">
+                <!-- Новостные блоки -->
+                <article class="news-blog blog1">
+                    <!-- Шапка новостного блока -->
+                    <header class="blog-header">
+                    <time datetime="2018-10-11T13:37:00">{{articles.date|date:"d-m-y в H:i"}}</time>
+                    <div class="blog-profile">
+                        <a class="blog-profile-name" href="#">
+                        <div class="blog-header-image"></div>
+                        {{articles.author}}
+                        </a>
+                    </div>
+                    </header>
+                    <!-- Основа новостного блока -->
+                    <div class="blog-main">
+                    <h1>{{articles.title}}</h1>
+                    <p>{{articles.post|safe|linebreaks}}</p>
+                    </div>
+                    <!-- Футтер новостного блока -->
+                    <footer class="blog-footer">
+                    <a class="blog-footer-comment" href="#">
+                        <div class="chat footer-icon"></div>
+                        Комментарии
+                    </a>
+                    <a class="blog-footer-favorite" href="#">
+                        <div class="star footer-icon"></div>
+                        В закладки
+                    </a>
+                    </footer>
+                </article>
+
+            </section>
+        
+        <!-- Подпорка для float -->
+        <div class="clear-fix"></div>
+        </div>
+    </main>
+
+{% endblock %}

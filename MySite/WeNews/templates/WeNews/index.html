@@ -1,0 +1,60 @@
+{% extends "WeNews/wrapper.html" %}
+
+
+{% block content %}
+
+<!-- Главный блок -->
+<main>
+        <!-- блок div для центрирования -->
+        <div class="center">
+
+         <!-- Поле section для новостных блоков -->
+         <section class="news-column">    
+
+    {% for post in object_list %}
+
+
+            <!-- Новостные блоки -->
+            <article class="news-blog blog1">
+                <!-- Шапка новостного блока -->
+                <header class="blog-header">
+                <time datetime="2018-10-11T18:37:00">{{post.date|date:"H:i (d.m.y)"}}</time>
+                <div class="blog-profile">
+                    <a class="blog-profile-name" href="#">
+                    <div class="blog-header-image"></div>
+                    {{post.author}}
+                    </a>
+                </div>
+                </header>
+                <!-- Основа новостного блока -->
+                <div class="blog-main">
+                <h1><a href="/{{post.id}}">{{post.title}}</a></h1>
+                <p>{{post.post|safe|linebreaks}}</p>
+                </div>
+                <!-- Футтер новостного блока -->
+                <footer class="blog-footer">
+                <a class="blog-footer-comment" href="#">
+                    <div class="chat footer-icon"></div>
+                    Комментарии
+                </a>
+                <a class="blog-footer-favorite" href="#">
+                    <div class="star footer-icon"></div>
+                    В закладки
+                </a>
+                </footer>
+            </article>
+
+    {% endfor %}
+    
+        </section>
+<!-- Пустой блок справа в главном блоке -->
+<selection class="empty-block">
+        <p>Просто пустой блок</p>
+    </selection>
+
+    <!-- Подпорка для float -->
+    <div class="clear-fix"></div>
+    </div>
+</main>
+
+{% endblock %}
